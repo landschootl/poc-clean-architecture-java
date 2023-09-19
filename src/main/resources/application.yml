@@ -1,0 +1,19 @@
+spring.jpa:
+  hibernate.ddl-auto: "none"
+spring:
+  jpa:
+    show-sql: true
+
+logging:
+  level:
+    ROOT: INFO
+    org:
+      springframework:
+        orm:
+          jpa: DEBUG
+        transaction: DEBUG
+      hibernate:
+        engine:
+          transaction:
+            internal:
+              TransactionImpl: DEBUG
